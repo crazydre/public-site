@@ -1,0 +1,21 @@
+{
+  "name": "site-container",
+  // https://mcr.microsoft.com/v2/vscode/devcontainers/javascript-node/tags/list
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1.1.8-22-bookworm",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash",
+            "icon": "terminal-bash"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "containerEnv": {
+    "CONTAINER_NAME": "site-container"
+  }
+}
